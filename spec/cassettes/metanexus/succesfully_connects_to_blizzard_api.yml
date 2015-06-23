@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/data/character/races?locale=en_GB&apikey=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-encoding:
+      - gzip
+      content-language:
+      - en-GB
+      content-type:
+      - application/json;charset=UTF-8
+      date:
+      - Tue, 23 Jun 2015 21:19:40 GMT
+      server:
+      - Apache
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-mashery-responder:
+      - prod-j-worker-us-east-1b-76.mashery.com
+      x-plan-qps-allotted:
+      - '100'
+      x-plan-qps-current:
+      - '1'
+      x-plan-quota-allotted:
+      - '36000'
+      x-plan-quota-current:
+      - '9'
+      x-plan-quota-reset:
+      - Tuesday, June 23, 2015 10:00:00 PM GMT
+      content-length:
+      - '284'
+      connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"races":[{"id":1,"mask":1,"side":"alliance","name":"Human"},{"id":1,"mask":1,"side":"alliance","name":"Human"},{"id":2,"mask":2,"side":"horde","name":"Orc"},{"id":2,"mask":2,"side":"horde","name":"Orc"},{"id":3,"mask":4,"side":"alliance","name":"Dwarf"},{"id":3,"mask":4,"side":"alliance","name":"Dwarf"},{"id":4,"mask":8,"side":"alliance","name":"Night
+        Elf"},{"id":4,"mask":8,"side":"alliance","name":"Night Elf"},{"id":5,"mask":16,"side":"horde","name":"Undead"},{"id":5,"mask":16,"side":"horde","name":"Undead"},{"id":6,"mask":32,"side":"horde","name":"Tauren"},{"id":6,"mask":32,"side":"horde","name":"Tauren"},{"id":7,"mask":64,"side":"alliance","name":"Gnome"},{"id":7,"mask":64,"side":"alliance","name":"Gnome"},{"id":8,"mask":128,"side":"horde","name":"Troll"},{"id":8,"mask":128,"side":"horde","name":"Troll"},{"id":9,"mask":256,"side":"horde","name":"Goblin"},{"id":10,"mask":512,"side":"horde","name":"Blood
+        Elf"},{"id":10,"mask":512,"side":"horde","name":"Blood Elf"},{"id":11,"mask":1024,"side":"alliance","name":"Draenei"},{"id":11,"mask":1024,"side":"alliance","name":"Draenei"},{"id":22,"mask":2097152,"side":"alliance","name":"Worgen"},{"id":24,"mask":8388608,"side":"neutral","name":"Pandaren"},{"id":25,"mask":16777216,"side":"alliance","name":"Pandaren"},{"id":26,"mask":33554432,"side":"horde","name":"Pandaren"}]}'
+    http_version: '1.1'
+  recorded_at: Tue, 23 Jun 2015 21:19:40 GMT
+recorded_with: VCR 2.9.3
