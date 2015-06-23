@@ -10,9 +10,9 @@
  - [ ] Getting Auction JSON.
 
 ### Battle Pets
- - [ ] Getting Battle Pet Ability
- - [ ] Getting Battle Pet Species
- - [ ] Getting Battle Pet Stats
+ - [x] ~~Getting Battle Pet Ability~~
+ - [x] ~~Getting Battle Pet Species~~
+ - [x] ~~Getting Battle Pet Stats~~
 
 ### Challenge Mode
  - [ ] Getting Realm Leaderboard
