@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/character/shadowsong/Redstone?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 24 Jun 2015 19:21:58 GMT
+      Last-Modified:
+      - Wed, 24 Jun 2015 15:43:40 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1e-85.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '14'
+      X-Plan-Quota-Reset:
+      - Wednesday, June 24, 2015 8:00:00 PM GMT
+      Content-Length:
+      - '227'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"lastModified":1435160620000,"name":"Redstone","realm":"Shadowsong","battlegroup":"Reckoning
+        / Abrechnung","class":8,"race":2,"gender":1,"level":90,"achievementPoints":8390,"thumbnail":"internal-record-3666/105/93238889-avatar.jpg","calcClass":"e","totalHonorableKills":4519}'
+    http_version: 
+  recorded_at: Wed, 24 Jun 2015 19:21:58 GMT
+recorded_with: VCR 2.9.3

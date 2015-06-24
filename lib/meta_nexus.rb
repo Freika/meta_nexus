@@ -6,6 +6,7 @@ require 'meta_nexus/wow'
 require 'meta_nexus/wow/achievement'
 require 'meta_nexus/wow/battlepet'
 require 'meta_nexus/wow/challenge_mode'
+require 'meta_nexus/wow/character'
 
 module MetaNexus
 
