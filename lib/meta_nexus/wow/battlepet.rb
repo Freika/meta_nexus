@@ -1,5 +1,7 @@
 class MetaNexus::Wow::BattlePet < MetaNexus::Wow
 
+  attr_accessor :breed_id, :level, :quality_id
+
   # Find BattlePet ability in Battle.net WoW Api
   #
   # Required arguments:
@@ -56,11 +58,12 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
     json = JSON.parse(response.body)
   end
 
-  def stats(id, level = nil, breed_id = nil, quality_id = nil)
-    call_url = "#{client.url}/battlePet/stats/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_url += "&level=#{level}" if level
-    call_url += "&breedId=#{breed_id}" if breed_id
-    call_url += "&qualityId=#{quality_id}" if quality_id
+  def stats(id, **args)
+    call_url = "#{client.url}/battlePet/stats/#{id}?"
+    call_url += "level=#{args[:level]}&" if args[:level]
+    call_url += "breedId=#{args[:breed_id]}&" if args[:breed_id]
+    call_url += "qualityId=#{args[:quality_id]}&" if args[:quality_id]
+    call_url += "locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
     json = JSON.parse(response.body)
