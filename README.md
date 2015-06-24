@@ -1,6 +1,6 @@
 # MetaNexus
 
-[![Codeship Status for Freika/meta_nexus](https://codeship.com/projects/f1185c30-fc0c-0132-e3b1-46c0998097e0/status?branch=master)](https://codeship.com/projects/87382)
+[![Build Status](https://travis-ci.org/Freika/meta_nexus.svg?branch=master)](https://travis-ci.org/Freika/meta_nexus)
 [![Code Climate](https://codeclimate.com/github/Freika/meta_nexus/badges/gpa.svg)](https://codeclimate.com/github/Freika/meta_nexus)
 [![Test Coverage](https://codeclimate.com/github/Freika/meta_nexus/badges/coverage.svg)](https://codeclimate.com/github/Freika/meta_nexus/coverage)
 
