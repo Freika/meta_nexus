@@ -1,4 +1,4 @@
-class MetaNexus::Wow::Achievement < MetaNexus::Wow
+class MetaNexus::Wow::Item < MetaNexus::Wow
 
   # Find Achievement in Battle.net WoW Api
   # Required arguments:
@@ -14,7 +14,15 @@ class MetaNexus::Wow::Achievement < MetaNexus::Wow
 
   def find(id)
     client = MetaNexus::Wow.new(@region, @api_key)
-    call_url = "#{client.url}/achievement/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+    call_url = "#{client.url}/item/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+
+    response = HTTParty.get(call_url)
+    json = JSON.parse(response.body)
+  end
+
+  def set(id)
+    client = MetaNexus::Wow.new(@region, @api_key)
+    call_url = "#{client.url}/item/set/#{id}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
     json = JSON.parse(response.body)

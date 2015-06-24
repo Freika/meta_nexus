@@ -42,8 +42,8 @@
 
 ### Items
 
- - [ ] Getting item
- - [ ] Getting item set
+ - [x] ~~Getting item~~
+ - [x] ~~Getting item set~~
 
 ### Guild
  - [ ] Getting guild profile

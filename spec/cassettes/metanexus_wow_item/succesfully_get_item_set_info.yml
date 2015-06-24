@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/item/set/1060?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 24 Jun 2015 20:19:06 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1e-75.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '11'
+      X-Plan-Quota-Reset:
+      - Wednesday, June 24, 2015 9:00:00 PM GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1060,"name":"Deep Earth Vestments","setBonuses":[{"description":"Reduces
+        the mana cost of Healing Touch and Rejuvenation by 5%.","threshold":2},{"description":"Your
+        Rejuvenation and Regrowth spells have a 10% chance to Timeslip and have double
+        the normal duration.","threshold":4}],"items":[76749,76750,76751,76752,76753]}'
+    http_version: 
+  recorded_at: Wed, 24 Jun 2015 20:19:26 GMT
+recorded_with: VCR 2.9.3
