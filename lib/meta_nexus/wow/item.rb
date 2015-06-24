@@ -1,14 +1,23 @@
 class MetaNexus::Wow::Item < MetaNexus::Wow
 
-  # Find Achievement in Battle.net WoW Api
+  # Find Item in Battle.net WoW Api
   # Required arguments:
-  # id      - achievement id
+  # id      - item id
   #
   # Example:
-  #   achievement = MetaNexus::Wow::Achievement.new('eu', 'en_US', 'api_key')
-  #   achievement.find(200)
+  #   item = MetaNexus::Wow::Item.new('eu', 'en_US', 'api_key')
+  #   item.find(18803)
   # Response in Hash:
-  #   {"id"=>200, "title"=>"Persistent Defender", "points"=>10, "description"=>"Return 50 flags as a defender in Warsong Gulch.", "rewardItems"=>[], "icon"=>"achievement_bg_interruptx_flagcapture_attempts", "criteria"=>[{"id"=>440, "description"=>"Return the flag 50 times", "orderIndex"=>1, "max"=>50}], "accountWide"=>false, "factionId"=>2}
+  #   {"id"=>18803, "disenchantingSkillRank"=>225, "description"=>"Property of Finkle Einhorn, ...
+  #
+  # Find Item set in Battle.net WoW Api
+  # Required arguments:
+  # set_id  - set id
+  # Example:
+  #   item = MetaNexus::Wow::Item.new('eu', 'en_US', 'api_key')
+  #   item.set(1060)
+  # Response in Hash:
+  #   {"id"=>1060, "name"=>"Deep Earth Vestments", "setBonuses"=>[{"description"=>"Reduces the mana cost of ...
   #
 
 
