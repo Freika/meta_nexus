@@ -15,8 +15,9 @@
  - [x] ~~Getting Battle Pet Stats~~
 
 ### Challenge Mode
- - [ ] Getting Realm Leaderboard
- - [ ] Getting Region Leaderboard
+ - [x] Getting Realm Leaderboard
+ - [x] Getting Region Leaderboard
+> There is no tests for challenge modes yet.
 
 ### Character Profile
 
