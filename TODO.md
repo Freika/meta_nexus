@@ -21,24 +21,24 @@
 
 ### Character Profile
 
- - [ ] Getting profile
- - [ ] Getting achievements
- - [ ] Getting appearance
- - [ ] Getting feed
- - [ ] Getting guild
- - [ ] Getting hunter pets
- - [ ] Getting items
- - [ ] Getting mounts
- - [ ] Getting pets
- - [ ] Getting pet slots
- - [ ] Getting progression
- - [ ] Getting pvp
- - [ ] Getting quests
- - [ ] Getting reputation
- - [ ] Getting stats
- - [ ] Getting talents
- - [ ] Getting titles
- - [ ] Getting audit
+ - [x] ~~Getting profile~~
+ - [x] ~~Getting achievements~~
+ - [x] ~~Getting appearance~~
+ - [x] ~~Getting feed~~
+ - [x] ~~Getting guild~~
+ - [x] ~~Getting hunter pets~~
+ - [x] ~~Getting items~~
+ - [x] ~~Getting mounts~~
+ - [x] ~~Getting pets~~
+ - [x] ~~Getting pet slots~~
+ - [x] ~~Getting progression~~
+ - [x] ~~Getting pvp~~
+ - [x] ~~Getting quests~~
+ - [x] ~~Getting reputation~~
+ - [x] ~~Getting stats~~
+ - [x] ~~Getting talents~~
+ - [x] ~~Getting titles~~
+ - [x] ~~Getting audit~~
 
 ### Items
 
