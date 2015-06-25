@@ -63,7 +63,8 @@
 
 ### Realms
 
- - [ ] Getting realm status
+ - [x] Getting realm status
+> There is no tests for challenge modes yet.
 
 ### Recipe
 
@@ -71,7 +72,7 @@
 
 ### Spells
 
- - [ ] Getting spell info
+ - [x] ~~Getting spell info~~
 
 ### Data resources
 
