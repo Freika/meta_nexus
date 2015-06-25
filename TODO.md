@@ -68,7 +68,7 @@
 
 ### Recipe
 
- - [ ] Getting recipe info
+ - [x] ~~Getting recipe info~~
 
 ### Spells
 

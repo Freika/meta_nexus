@@ -13,7 +13,7 @@ require 'meta_nexus/wow/pvp'
 require 'meta_nexus/wow/quest'
 require 'meta_nexus/wow/realm'
 require 'meta_nexus/wow/spell'
-# require 'meta_nexus/wow/recipe'
+require 'meta_nexus/wow/recipe'
 
 module MetaNexus
 
