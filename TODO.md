@@ -59,7 +59,7 @@
 
 ### Quests
 
- - [ ] Getting quests info
+ - [x] ~~Getting quests info~~
 
 ### Realms
 
