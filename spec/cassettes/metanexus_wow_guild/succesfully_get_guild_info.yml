@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Thu, 25 Jun 2015 19:44:06 GMT
+      - Thu, 25 Jun 2015 20:44:21 GMT
       Last-Modified:
-      - Thu, 25 Jun 2015 19:42:24 GMT
+      - Thu, 25 Jun 2015 20:42:24 GMT
       Server:
       - Apache
       Vary:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-84.mashery.com
+      - prod-j-worker-us-east-1e-75.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,17 +41,17 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '12'
+      - '62'
       X-Plan-Quota-Reset:
-      - Thursday, June 25, 2015 8:00:00 PM GMT
+      - Thursday, June 25, 2015 9:00:00 PM GMT
       Content-Length:
-      - '204'
+      - '203'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"lastModified":1435261344000,"name":"Goblins","realm":"Shadowsong","battlegroup":"Reckoning
+      string: '{"lastModified":1435264944000,"name":"Goblins","realm":"Shadowsong","battlegroup":"Reckoning
         / Abrechnung","level":25,"side":1,"achievementPoints":2500,"emblem":{"icon":12,"iconColor":"ffb1b8b1","border":3,"borderColor":"ffffffff","backgroundColor":"ff232323"}}'
     http_version: 
-  recorded_at: Thu, 25 Jun 2015 19:44:07 GMT
+  recorded_at: Thu, 25 Jun 2015 20:45:06 GMT
 recorded_with: VCR 2.9.3

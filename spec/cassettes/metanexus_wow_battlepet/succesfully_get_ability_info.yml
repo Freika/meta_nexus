@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Wed, 24 Jun 2015 18:26:28 GMT
+      - Thu, 25 Jun 2015 20:41:34 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-82.mashery.com
+      - prod-j-worker-us-east-1e-71.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,9 +39,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '26'
+      - '42'
       X-Plan-Quota-Reset:
-      - Wednesday, June 24, 2015 7:00:00 PM GMT
+      - Thursday, June 25, 2015 9:00:00 PM GMT
       Content-Length:
       - '135'
       Connection:
@@ -50,5 +50,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"id":640,"name":"Toxic Smoke","icon":"spell_shadow_plaguecloud","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}'
     http_version: 
-  recorded_at: Wed, 24 Jun 2015 18:26:28 GMT
+  recorded_at: Thu, 25 Jun 2015 20:41:35 GMT
 recorded_with: VCR 2.9.3

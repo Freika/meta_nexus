@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/data/guild/perks?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 25 Jun 2015 20:41:02 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-80.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '49'
+      X-Plan-Quota-Reset:
+      - Thursday, June 25, 2015 9:00:00 PM GMT
+      Content-Length:
+      - '689'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"perks":[{"guildLevel":1,"spell":{"id":78633,"name":"Mount Up","subtext":"Guild
+        Perk","icon":"achievement_guildperk_mountup","description":"Increases speed
+        while mounted by 10%.  Not active in Battlegrounds or Arenas.","castTime":"Passive"}},{"guildLevel":1,"spell":{"id":83944,"name":"Hasty
+        Hearth","subtext":"Guild Perk","icon":"achievement_guildperk_hastyhearth","description":"Reduces
+        the cooldown on your Hearthstone by 15 minutes.","castTime":"Passive"}},{"guildLevel":1,"spell":{"id":83968,"name":"Mass
+        Resurrection","subtext":"Guild Perk","icon":"achievement_guildperk_massresurrection","description":"Brings
+        all dead party and raid members back to life with 35% health and 35% mana.  A
+        player may only be resurrected by this spell once every 10 minutes.  Cannot
+        be cast in combat or while in a battleground or arena.","range":"100 yd range","castTime":"10
+        sec cast"}},{"guildLevel":1,"spell":{"id":83950,"name":"The Quick and the
+        Dead","subtext":"Guild Perk","icon":"achievement_guildperk_quickanddead","description":"Increases
+        health gained when resurrected by 50% and increases movement speed while dead
+        by 10%.  Does not function in combat or while in a Battleground or Arena.","castTime":"Passive"}},{"guildLevel":1,"spell":{"id":83951,"name":"Guild
+        Mail","subtext":"Guild Perk","icon":"achievement_guildperk_gmail","description":"In-game
+        mail sent between guild members now arrives instantly.","castTime":"Passive"}},{"guildLevel":1,"spell":{"id":83958,"name":"Mobile
+        Banking","subtext":"Guild Perk","icon":"achievement_guildperk_mobilebanking","description":"Summons
+        a Guild Chest that allows access to your guild bank for 5 min.  Only guild
+        members with guild reputation of friendly and above are allowed to use a Guild
+        Chest.","castTime":"3 sec cast","cooldown":"60 min cooldown"}}]}'
+    http_version: 
+  recorded_at: Thu, 25 Jun 2015 20:41:45 GMT
+recorded_with: VCR 2.9.3

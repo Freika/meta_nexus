@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Wed, 24 Jun 2015 20:04:38 GMT
+      - Thu, 25 Jun 2015 20:41:40 GMT
       Last-Modified:
       - Wed, 24 Jun 2015 15:43:40 GMT
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-70.mashery.com
+      - prod-j-worker-us-east-1b-83.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,9 +41,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '2'
+      - '45'
       X-Plan-Quota-Reset:
-      - Wednesday, June 24, 2015 9:00:00 PM GMT
+      - Thursday, June 25, 2015 9:00:00 PM GMT
       Content-Length:
       - '227'
       Connection:
@@ -51,7 +51,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"lastModified":1435160620000,"name":"Redstone","realm":"Shadowsong","battlegroup":"Reckoning
-        / Abrechnung","class":8,"race":2,"gender":1,"level":90,"achievementPoints":8390,"thumbnail":"internal-record-3666/105/93238889-avatar.jpg","calcClass":"e","totalHonorableKills":4519}'
+        / Abrechnung","class":8,"race":2,"gender":1,"level":90,"achievementPoints":8400,"thumbnail":"internal-record-3666/105/93238889-avatar.jpg","calcClass":"e","totalHonorableKills":4519}'
     http_version: 
-  recorded_at: Wed, 24 Jun 2015 20:04:39 GMT
+  recorded_at: Thu, 25 Jun 2015 20:41:41 GMT
 recorded_with: VCR 2.9.3
