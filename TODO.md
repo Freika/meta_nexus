@@ -54,7 +54,8 @@
 
 ### PVP
 
- - [ ] Getting leaderboards
+ - [x] Getting leaderboards
+> There is no tests for challenge modes yet.
 
 ### Quests
 

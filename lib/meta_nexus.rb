@@ -9,6 +9,7 @@ require 'meta_nexus/wow/challenge_mode'
 require 'meta_nexus/wow/character'
 require 'meta_nexus/wow/item'
 require 'meta_nexus/wow/guild'
+require 'meta_nexus/wow/pvp'
 
 module MetaNexus
 
