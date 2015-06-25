@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/data/pet/types?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 25 Jun 2015 20:48:11 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1e-82.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '66'
+      X-Plan-Quota-Reset:
+      - Thursday, June 25, 2015 9:00:00 PM GMT
+      Content-Length:
+      - '305'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"petTypes":[{"id":0,"key":"humanoid","name":"Humanoid","typeAbilityId":238,"strongAgainstId":1,"weakAgainstId":7},{"id":1,"key":"dragonkin","name":"Dragonkin","typeAbilityId":245,"strongAgainstId":5,"weakAgainstId":3},{"id":2,"key":"flying","name":"Flying","typeAbilityId":239,"strongAgainstId":8,"weakAgainstId":1},{"id":3,"key":"undead","name":"Undead","typeAbilityId":242,"strongAgainstId":0,"weakAgainstId":8},{"id":4,"key":"critter","name":"Critter","typeAbilityId":236,"strongAgainstId":3,"weakAgainstId":0},{"id":5,"key":"magical","name":"Magic","typeAbilityId":243,"strongAgainstId":2,"weakAgainstId":9},{"id":6,"key":"elemental","name":"Elemental","typeAbilityId":241,"strongAgainstId":9,"weakAgainstId":4},{"id":7,"key":"beast","name":"Beast","typeAbilityId":237,"strongAgainstId":4,"weakAgainstId":2},{"id":8,"key":"water","name":"Aquatic","typeAbilityId":240,"strongAgainstId":6,"weakAgainstId":5},{"id":9,"key":"mechanical","name":"Mechanical","typeAbilityId":244,"strongAgainstId":7,"weakAgainstId":6}]}'
+    http_version: 
+  recorded_at: Thu, 25 Jun 2015 20:48:11 GMT
+recorded_with: VCR 2.9.3

@@ -76,16 +76,16 @@
 
 ### Data resources
 
- - [ ] Getting battlegroups
- - [ ] Getting characters races
- - [ ] Getting character classes
- - [ ] Getting character achievements
- - [ ] Getting guild rewards
- - [ ] Getting guild perks
- - [ ] Getting guild achievements
- - [ ] Getting item classes
- - [ ] Getting talents
- - [ ] Getting pet types
+ - [x] Getting battlegroups
+ - [x] ~~Getting characters races~~
+ - [x] ~~Getting character classes~~
+ - [x] Getting character achievements
+ - [x] Getting guild rewards
+ - [x] ~~Getting guild perks~~
+ - [x] Getting guild achievements
+ - [x] ~~Getting item classes~~
+ - [x] Getting talents
+ - [x] ~~Getting pet types~~
 
 
 ## Diablo 3
