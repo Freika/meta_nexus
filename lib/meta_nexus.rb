@@ -8,6 +8,7 @@ require 'meta_nexus/wow/battlepet'
 require 'meta_nexus/wow/challenge_mode'
 require 'meta_nexus/wow/character'
 require 'meta_nexus/wow/item'
+require 'meta_nexus/wow/guild'
 
 module MetaNexus
 

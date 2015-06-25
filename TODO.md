@@ -46,11 +46,11 @@
  - [x] ~~Getting item set~~
 
 ### Guild
- - [ ] Getting guild profile
- - [ ] Getting guild members
- - [ ] Getting guild achievements
- - [ ] Getting guild news
- - [ ] Getting guild challenge
+ - [x] ~~Getting guild profile~~
+ - [x] ~~Getting guild members~~
+ - [x] ~~Getting guild achievements~~
+ - [x] ~~Getting guild news~~
+ - [x] ~~Getting guild challenge~~
 
 ### PVP
 
