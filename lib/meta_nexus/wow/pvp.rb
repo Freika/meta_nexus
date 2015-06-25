@@ -13,8 +13,6 @@ class MetaNexus::Wow::Pvp < MetaNexus::Wow
 
   def leaderboard(bracket)
     call_url = "#{client.url}/leaderboard/#{bracket}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

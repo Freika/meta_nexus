@@ -14,8 +14,6 @@ class MetaNexus::Wow::Spell < MetaNexus::Wow
 
   def find(id)
     call_url = "#{client.url}/spell/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

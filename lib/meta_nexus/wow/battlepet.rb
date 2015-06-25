@@ -46,16 +46,12 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
 
   def ability(id)
     call_url = "#{client.url}/battlePet/ability/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 
   def species(id)
     call_url = "#{client.url}/battlePet/species/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 
   def stats(id, **args)
@@ -64,8 +60,6 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
     call_url += "breedId=#{args[:breed_id]}&" if args[:breed_id]
     call_url += "qualityId=#{args[:quality_id]}&" if args[:quality_id]
     call_url += "locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

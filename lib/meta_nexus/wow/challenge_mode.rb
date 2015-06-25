@@ -21,15 +21,11 @@ class MetaNexus::Wow::ChallengeMode < MetaNexus::Wow
 
   def realm(realm)
     call_url = "#{client.url}/challenge/#{realm}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 
   def region
     call_url = "#{client.url}/challenge/region?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

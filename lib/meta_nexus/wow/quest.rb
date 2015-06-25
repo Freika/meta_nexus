@@ -13,8 +13,6 @@ class MetaNexus::Wow::Quest < MetaNexus::Wow
 
   def find(id)
     call_url = "#{client.url}/quest/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

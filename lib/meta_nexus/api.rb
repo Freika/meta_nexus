@@ -11,5 +11,10 @@ module MetaNexus
     def url
       "https://#{@region}.api.battle.net"
     end
+
+    def call_api(call_url)
+      response = HTTParty.get(call_url)
+      json = JSON.parse(response.body)
+    end
   end
 end

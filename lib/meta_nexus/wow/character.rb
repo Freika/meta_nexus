@@ -66,8 +66,6 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
     call_url += fields if fields
     call_url += '&' if args
     call_url += "locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

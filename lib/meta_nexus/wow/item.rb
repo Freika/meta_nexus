@@ -23,15 +23,11 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
 
   def find(id)
     call_url = "#{client.url}/item/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 
   def set(id)
     call_url = "#{client.url}/item/set/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end

@@ -27,8 +27,6 @@ class MetaNexus::Wow::Realm < MetaNexus::Wow
 
   def status
     call_url = "#{client.url}/realm/status?locale=#{@locale}&apikey=#{@api_key}"
-
-    response = HTTParty.get(call_url)
-    json = JSON.parse(response.body)
+    call_api(call_url)
   end
 end
