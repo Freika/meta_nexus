@@ -60,3 +60,7 @@
 
  - [ ] Achievements
  - [ ] Rewards
+
+## Refactorings
+
+ - [ ] Use fixtures to handle rspec expectations instead of inline hashes.

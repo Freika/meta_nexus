@@ -14,7 +14,7 @@ module MetaNexus
 
     def call_api(call_url)
       response = HTTParty.get(call_url)
-      json = JSON.parse(response.body)
+      JSON.parse(response.body)
     end
   end
 end
