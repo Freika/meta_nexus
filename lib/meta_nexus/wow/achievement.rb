@@ -13,7 +13,6 @@ class MetaNexus::Wow::Achievement < MetaNexus::Wow
 
 
   def find(id)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/achievement/#{id}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)

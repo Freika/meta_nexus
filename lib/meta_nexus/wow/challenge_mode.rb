@@ -20,7 +20,6 @@ class MetaNexus::Wow::ChallengeMode < MetaNexus::Wow
 
 
   def realm(realm)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/challenge/#{realm}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -28,7 +27,6 @@ class MetaNexus::Wow::ChallengeMode < MetaNexus::Wow
   end
 
   def region
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/challenge/region?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)

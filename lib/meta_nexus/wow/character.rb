@@ -42,7 +42,6 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
 
 
   def find(realm, name, **args)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/character/#{realm}/#{name}?"
 
     fields = 'fields=' if args

@@ -11,9 +11,7 @@ class MetaNexus::Wow::Pvp < MetaNexus::Wow
   #   Huge hash with leaderboard.
   #
 
-
   def leaderboard(bracket)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/leaderboard/#{bracket}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)

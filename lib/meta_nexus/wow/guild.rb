@@ -26,7 +26,6 @@ class MetaNexus::Wow::Guild < MetaNexus::Wow
   #
 
   def find(realm, guildname, **args)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/guild/#{realm}/#{guildname}?"
 
 

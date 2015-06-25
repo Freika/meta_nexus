@@ -25,9 +25,7 @@ class MetaNexus::Wow::Realm < MetaNexus::Wow
   # 3: Concluded
   # next - A timestamp of when the next battle starts.
 
-
   def status
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/realm/status?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)

@@ -22,7 +22,6 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
 
 
   def find(id)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/item/#{id}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -30,7 +29,6 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
   end
 
   def set(id)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/item/set/#{id}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)

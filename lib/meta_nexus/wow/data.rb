@@ -20,7 +20,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
 
 
   def battlegroups
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/battlegroups/?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -28,7 +27,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def character_races
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/character/races?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -36,7 +34,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def character_classes
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/character/classes?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -44,7 +41,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def character_achievements
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/character/achievements?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -52,7 +48,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def guild_achievements
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/guild/achievements?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -60,7 +55,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def guild_rewards
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/guild/rewards?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -68,7 +62,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def guild_perks
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/guild/perks?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -76,7 +69,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def item_classes
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/item/classes?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -84,7 +76,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def talents
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/talents?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
@@ -92,7 +83,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   end
 
   def pet_types
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/data/pet/types?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)

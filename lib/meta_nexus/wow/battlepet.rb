@@ -68,10 +68,4 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
     response = HTTParty.get(call_url)
     json = JSON.parse(response.body)
   end
-
-  private
-
-  def client
-    MetaNexus::Wow.new(@region, @api_key)
-  end
 end

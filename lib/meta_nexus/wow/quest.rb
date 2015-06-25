@@ -11,9 +11,7 @@ class MetaNexus::Wow::Quest < MetaNexus::Wow
   #   {"id"=>13146, "title"=>"Generosity Abounds", "reqLevel"=>77, "suggestedPartyMembers"=>0, "category"=>"Icecrown", "level"=>80}
   #
 
-
   def find(id)
-    client = MetaNexus::Wow.new(@region, @api_key)
     call_url = "#{client.url}/quest/#{id}?locale=#{@locale}&apikey=#{@api_key}"
 
     response = HTTParty.get(call_url)
