@@ -34,8 +34,8 @@
 
 ### Profile
 
- - [ ] Career profile
- - [ ] Hero profile
+ - [x] ~~Career profile~~
+ - [x] ~~Hero profile~~
 
 ### Data resources
 

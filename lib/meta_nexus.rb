@@ -15,6 +15,9 @@ require 'meta_nexus/wow/realm'
 require 'meta_nexus/wow/spell'
 require 'meta_nexus/wow/recipe'
 require 'meta_nexus/wow/data'
+require 'meta_nexus/d3'
+require 'meta_nexus/d3/profile'
+# require 'meta_nexus/d3/data'
 
 module MetaNexus
 

@@ -1,0 +1,352 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/d3/profile/Scorch-2826/?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 26 Jun 2015 20:15:43 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-76.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '14'
+      X-Plan-Quota-Reset:
+      - Friday, June 26, 2015 9:00:00 PM GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "battleTag" : "Scorch#2826",
+          "paragonLevel" : 224,
+          "paragonLevelHardcore" : 0,
+          "paragonLevelSeason" : 4,
+          "paragonLevelSeasonHardcore" : 0,
+          "heroes" : [ {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "Scorched",
+            "id" : 9034002,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1431036864,
+            "gender" : 1,
+            "dead" : false,
+            "class" : "wizard"
+          }, {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "Scorch",
+            "id" : 77002,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1428496101,
+            "gender" : 1,
+            "dead" : false,
+            "class" : "monk"
+          }, {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "Scarry",
+            "id" : 12883988,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1431037052,
+            "gender" : 0,
+            "dead" : false,
+            "class" : "witch-doctor"
+          }, {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "Scorcher",
+            "id" : 22831591,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1423584904,
+            "gender" : 0,
+            "dead" : false,
+            "class" : "barbarian"
+          }, {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "RoyalBlood",
+            "id" : 47485440,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1423087443,
+            "gender" : 1,
+            "dead" : false,
+            "class" : "demon-hunter"
+          }, {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "Solar",
+            "id" : 38771291,
+            "level" : 56,
+            "hardcore" : false,
+            "last-updated" : 1411757149,
+            "gender" : 0,
+            "dead" : false,
+            "class" : "crusader"
+          }, {
+            "paragonLevel" : 224,
+            "seasonal" : false,
+            "name" : "Athena",
+            "id" : 57125711,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1428665727,
+            "gender" : 1,
+            "dead" : false,
+            "class" : "crusader"
+          }, {
+            "paragonLevel" : 4,
+            "seasonal" : true,
+            "name" : "CrashDown",
+            "id" : 60749821,
+            "level" : 70,
+            "hardcore" : false,
+            "last-updated" : 1431868099,
+            "gender" : 1,
+            "dead" : false,
+            "class" : "barbarian"
+          } ],
+          "lastHeroPlayed" : 60749821,
+          "lastUpdated" : 1431868099,
+          "kills" : {
+            "monsters" : 162201,
+            "elites" : 13923,
+            "hardcoreMonsters" : 0
+          },
+          "highestHardcoreLevel" : 0,
+          "timePlayed" : {
+            "barbarian" : 0.183,
+            "crusader" : 0.086,
+            "demon-hunter" : 0.239,
+            "monk" : 0.434,
+            "witch-doctor" : 0.263,
+            "wizard" : 1.0
+          },
+          "progression" : {
+            "act1" : true,
+            "act2" : true,
+            "act3" : true,
+            "act4" : true,
+            "act5" : true
+          },
+          "fallenHeroes" : [ ],
+          "blacksmith" : {
+            "slug" : "blacksmith",
+            "level" : 12,
+            "stepCurrent" : 0,
+            "stepMax" : 5
+          },
+          "jeweler" : {
+            "slug" : "jeweler",
+            "level" : 12,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "mystic" : {
+            "slug" : "mystic",
+            "level" : 12,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "blacksmithHardcore" : {
+            "slug" : "blacksmith",
+            "level" : 0,
+            "stepCurrent" : -1,
+            "stepMax" : 5
+          },
+          "jewelerHardcore" : {
+            "slug" : "jeweler",
+            "level" : 0,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "mysticHardcore" : {
+            "slug" : "mystic",
+            "level" : 0,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "blacksmithSeason" : {
+            "slug" : "blacksmith",
+            "level" : 12,
+            "stepCurrent" : 0,
+            "stepMax" : 5
+          },
+          "jewelerSeason" : {
+            "slug" : "jeweler",
+            "level" : 10,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "mysticSeason" : {
+            "slug" : "mystic",
+            "level" : 12,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "blacksmithSeasonHardcore" : {
+            "slug" : "blacksmith",
+            "level" : 0,
+            "stepCurrent" : -1,
+            "stepMax" : 5
+          },
+          "jewelerSeasonHardcore" : {
+            "slug" : "jeweler",
+            "level" : 0,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "mysticSeasonHardcore" : {
+            "slug" : "mystic",
+            "level" : 0,
+            "stepCurrent" : 0,
+            "stepMax" : 1
+          },
+          "seasonalProfiles" : {
+            "season3" : {
+              "seasonId" : 3,
+              "paragonLevel" : 4,
+              "paragonLevelHardcore" : 0,
+              "kills" : {
+                "monsters" : 8,
+                "elites" : 85,
+                "hardcoreMonsters" : 0
+              },
+              "timePlayed" : {
+                "barbarian" : 1.0,
+                "crusader" : 0.0,
+                "demon-hunter" : 0.0,
+                "monk" : 0.0,
+                "witch-doctor" : 0.0,
+                "wizard" : 0.0
+              },
+              "highestHardcoreLevel" : 0,
+              "progression" : {
+                "act1" : false,
+                "act2" : false,
+                "act3" : false,
+                "act4" : false,
+                "act5" : false
+              }
+            },
+            "season0" : {
+              "seasonId" : 0,
+              "paragonLevel" : 224,
+              "paragonLevelHardcore" : 0,
+              "kills" : {
+                "monsters" : 157563,
+                "elites" : 12698,
+                "hardcoreMonsters" : 0
+              },
+              "timePlayed" : {
+                "barbarian" : 0.173,
+                "crusader" : 0.063,
+                "demon-hunter" : 0.144,
+                "monk" : 0.434,
+                "witch-doctor" : 0.263,
+                "wizard" : 1.0
+              },
+              "highestHardcoreLevel" : 0,
+              "progression" : {
+                "act1" : true,
+                "act2" : true,
+                "act3" : true,
+                "act4" : true,
+                "act5" : true
+              }
+            },
+            "season1" : {
+              "seasonId" : 1,
+              "paragonLevel" : 23,
+              "paragonLevelHardcore" : 0,
+              "kills" : {
+                "monsters" : 4550,
+                "elites" : 1053,
+                "hardcoreMonsters" : 0
+              },
+              "timePlayed" : {
+                "barbarian" : 0.0,
+                "crusader" : 0.0,
+                "demon-hunter" : 1.0,
+                "monk" : 0.0,
+                "witch-doctor" : 0.0,
+                "wizard" : 0.0
+              },
+              "highestHardcoreLevel" : 0,
+              "progression" : {
+                "act1" : false,
+                "act2" : false,
+                "act3" : false,
+                "act4" : false,
+                "act5" : false
+              }
+            },
+            "season2" : {
+              "seasonId" : 2,
+              "paragonLevel" : 2,
+              "paragonLevelHardcore" : 0,
+              "kills" : {
+                "monsters" : 80,
+                "elites" : 87,
+                "hardcoreMonsters" : 0
+              },
+              "timePlayed" : {
+                "barbarian" : 0.0,
+                "crusader" : 1.0,
+                "demon-hunter" : 0.0,
+                "monk" : 0.0,
+                "witch-doctor" : 0.0,
+                "wizard" : 0.0
+              },
+              "highestHardcoreLevel" : 0,
+              "progression" : {
+                "act1" : false,
+                "act2" : false,
+                "act3" : false,
+                "act4" : false,
+                "act5" : false
+              }
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 26 Jun 2015 20:15:43 GMT
+recorded_with: VCR 2.9.3
