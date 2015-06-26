@@ -40,7 +40,6 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   # This will return character info along with his appearance info.
   #
 
-
   def find(realm, name, **args)
     call_url = "#{client.url}/character/#{realm}/#{name}?"
 

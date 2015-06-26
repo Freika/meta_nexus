@@ -11,7 +11,7 @@ class MetaNexus::Wow::Realm < MetaNexus::Wow
   #   {"realms": [{ "type": "pvp", "population": "high", "queue": false, "wintergrasp": { "area": 1, "controlling-faction": 0, "status": 0, "next":}, "tol-barad": { "area": 21, "controlling-faction": 0, "status": 1, "next":}, "status": true, "name": "Aegwynn", "slug": "aegwynn", "battlegroup": "Misery", "locale": "de_DE", "timezone": "Europe/Paris", "connected_realms": ["aegwynn", "internal-record" } ...
   #
   # PvP Area Status Fields
-
+  #
   # area - An internal id of this zone.
   # controlling-faction - Which faction is controlling the zone at the moment. Possible values are
   # 0: Alliance

@@ -18,7 +18,6 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   # Each method will return appropriate information in Hash format.
   #
 
-
   def battlegroups
     call_url = "#{client.url}/data/battlegroups/?locale=#{@locale}&apikey=#{@api_key}"
     call_api(call_url)

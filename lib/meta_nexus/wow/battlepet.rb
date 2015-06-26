@@ -44,14 +44,12 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
   #   {"speciesId"=>258, "breedId"=>3, "petQualityId"=>1, "level"=>25, "health"=>1338, "power"=>261, "speed"=>193}
   #
 
-  def ability(id)
-    call_url = "#{client.url}/battlePet/ability/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
-  end
 
-  def species(id)
-    call_url = "#{client.url}/battlePet/species/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+  [:ability, :species].each do |type|
+    define_method(type.to_sym) do |id|
+      call_url = "#{client.url}/battlePet/#{type.to_s}/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+      call_api(call_url)
+    end
   end
 
   def stats(id, **args)

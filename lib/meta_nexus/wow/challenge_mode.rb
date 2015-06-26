@@ -17,7 +17,7 @@ class MetaNexus::Wow::ChallengeMode < MetaNexus::Wow
   #   challenge_mode.region
   # Response in Hash:
   #   {"challenge":[{"map":{"id":1182,"name":"Auchindoun","slug":"auchindoun","hasChallengeMode":true,"bronzeCriteria":{"time":3300000,"hours":0,"minutes":55,"seconds":0,"milliseconds":0,"isPositive":true},"silverCriteria": ...
-
+  #
 
   def realm(realm)
     call_url = "#{client.url}/challenge/#{realm}?locale=#{@locale}&apikey=#{@api_key}"

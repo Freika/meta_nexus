@@ -28,7 +28,6 @@ class MetaNexus::Wow::Guild < MetaNexus::Wow
   def find(realm, guildname, **args)
     call_url = "#{client.url}/guild/#{realm}/#{guildname}?"
 
-
     fields = 'fields=' if args
     fields += 'achievements,' if args[:achievements]
     fields += 'challenge,' if args[:challenge]
