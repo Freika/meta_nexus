@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/auction/data/eversong?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 28 Jun 2015 11:02:42 GMT
+      Last-Modified:
+      - Sun, 28 Jun 2015 10:45:36 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-56.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '3'
+      X-Plan-Quota-Reset:
+      - Sunday, June 28, 2015 12:00:00 PM GMT
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"files":[{"url":"http://eu.battle.net/auction-data/dc707dfc35f234b761f913ea5533f9f6/auctions.json","lastModified":1435488336000}]}'
+    http_version: 
+  recorded_at: Sun, 28 Jun 2015 11:02:42 GMT
+recorded_with: VCR 2.9.3

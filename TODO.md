@@ -2,9 +2,6 @@
 
 ## WoW
 
-### Auction
- - [ ] Getting Auction JSON.
-
 ### Challenge Mode
  - [x] Getting Realm Leaderboard
  - [x] Getting Region Leaderboard
