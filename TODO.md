@@ -32,34 +32,20 @@
 
 ## Diablo 3
 
-### Profile
-
- - [x] ~~Career profile~~
- - [x] ~~Hero profile~~
-
 ### Data resources
 
- - [x] ~~Item~~
- - [x] ~~Follower~~
  - [x] Artisan
-
 
 ## Starcraft 2
 
-### Profile
-
- - [x] ~~Profile~~
- - [x] ~~Ladders~~
- - [x] ~~March history~~
-
 ### Ladder
 
- - [ ] Ladders
+ - [x] Ladders
 
 ### Data resources
 
- - [ ] Achievements
- - [ ] Rewards
+ - [x] Achievements
+ - [x] Rewards
 
 ## Refactorings
 
