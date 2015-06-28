@@ -48,9 +48,9 @@
 
 ### Profile
 
- - [ ] Profile
- - [ ] Ladders
- - [ ] March history
+ - [x] ~~Profile~~
+ - [x] ~~Ladders~~
+ - [x] ~~March history~~
 
 ### Ladder
 

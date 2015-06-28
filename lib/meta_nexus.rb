@@ -18,6 +18,10 @@ require 'meta_nexus/wow/data'
 require 'meta_nexus/d3'
 require 'meta_nexus/d3/profile'
 require 'meta_nexus/d3/data'
+require 'meta_nexus/sc2'
+require 'meta_nexus/sc2/profile'
+# require 'meta_nexus/sc2/ladder'
+# require 'meta_nexus/sc2/data'
 
 module MetaNexus
 
