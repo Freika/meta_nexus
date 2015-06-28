@@ -39,9 +39,9 @@
 
 ### Data resources
 
- - [ ] Item
- - [ ] Follower
- - [ ] Artisan
+ - [x] ~~Item~~
+ - [x] ~~Follower~~
+ - [x] Artisan
 
 
 ## Starcraft 2

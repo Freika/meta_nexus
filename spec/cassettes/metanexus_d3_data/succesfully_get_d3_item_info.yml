@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/d3/data/item/hand-axe?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 28 Jun 2015 10:15:10 GMT
+      Last-Modified:
+      - Thu, 21 May 2015 21:35:10 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-80.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '11'
+      X-Plan-Quota-Reset:
+      - Sunday, June 28, 2015 11:00:00 AM GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJpZCIgOiAiQXhlXzFIXzAwMSIsCiAgIm5hbWUiIDogIkhhbmQgQXhl
+        IiwKICAiaWNvbiIgOiAiYXhlXzFoXzAwMV9kZW1vbmh1bnRlcl9tYWxlIiwK
+        ICAiZGlzcGxheUNvbG9yIiA6ICJ3aGl0ZSIsCiAgInRvb2x0aXBQYXJhbXMi
+        IDogIml0ZW0vaGFuZC1heGUiLAogICJyZXF1aXJlZExldmVsIiA6IDEsCiAg
+        Iml0ZW1MZXZlbCIgOiAxLAogICJzdGFja1NpemVNYXgiIDogMCwKICAiYm9u
+        dXNBZmZpeGVzIiA6IDAsCiAgImJvbnVzQWZmaXhlc01heCIgOiAwLAogICJh
+        Y2NvdW50Qm91bmQiIDogZmFsc2UsCiAgInR5cGVOYW1lIiA6ICJBeGUiLAog
+        ICJ0eXBlIiA6IHsKICAgICJ0d29IYW5kZWQiIDogZmFsc2UsCiAgICAiaWQi
+        IDogIkF4ZSIKICB9LAogICJkYW1hZ2VSYW5nZSIgOiAiKDLigJMzKeKAkygz
+        4oCTNCkgRGFtYWdlIiwKICAiZHBzIiA6IHsKICAgICJtaW4iIDogMy4yNDk5
+        OTk4ODA3OTA3MTA0LAogICAgIm1heCIgOiA0LjU0OTk5OTgzMzEwNjk5NQog
+        IH0sCiAgImF0dGFja3NQZXJTZWNvbmQiIDogewogICAgIm1pbiIgOiAxLjI5
+        OTk5OTk1MjMxNjI4NDIsCiAgICAibWF4IiA6IDEuMjk5OTk5OTUyMzE2Mjg0
+        MgogIH0sCiAgImF0dGFja3NQZXJTZWNvbmRUZXh0IiA6ICIxLjMwIEF0dGFj
+        a3MgcGVyIFNlY29uZCIsCiAgIm1pbkRhbWFnZSIgOiB7CiAgICAibWluIiA6
+        IDIuMCwKICAgICJtYXgiIDogMy4wCiAgfSwKICAibWF4RGFtYWdlIiA6IHsK
+        ICAgICJtaW4iIDogMy4wLAogICAgIm1heCIgOiA0LjAKICB9LAogICJzbG90
+        cyIgOiBbICJsZWZ0LWhhbmQiLCAiZm9sbG93ZXItbGVmdC1oYW5kIiwgInJp
+        Z2h0LWhhbmQiLCAiZm9sbG93ZXItcmlnaHQtaGFuZCIgXSwKICAiYXR0cmli
+        dXRlcyIgOiB7CiAgICAicHJpbWFyeSIgOiBbIF0sCiAgICAic2Vjb25kYXJ5
+        IiA6IFsgXSwKICAgICJwYXNzaXZlIiA6IFsgXQogIH0sCiAgImF0dHJpYnV0
+        ZXNSYXciIDogewogICAgIkF0dGFja3NfUGVyX1NlY29uZF9JdGVtIiA6IHsK
+        ICAgICAgIm1pbiIgOiAxLjI5OTk5OTk1MjMxNjI4NDIsCiAgICAgICJtYXgi
+        IDogMS4yOTk5OTk5NTIzMTYyODQyCiAgICB9LAogICAgIkR1cmFiaWxpdHlf
+        Q3VyIiA6IHsKICAgICAgIm1pbiIgOiA1MDAuMCwKICAgICAgIm1heCIgOiAx
+        MDAwLjAKICAgIH0sCiAgICAiRGFtYWdlX1dlYXBvbl9NaW4jUGh5c2ljYWwi
+        IDogewogICAgICAibWluIiA6IDIuMCwKICAgICAgIm1heCIgOiAzLjAKICAg
+        IH0sCiAgICAiRGFtYWdlX1dlYXBvbl9EZWx0YSNQaHlzaWNhbCIgOiB7CiAg
+        ICAgICJtaW4iIDogMS4wLAogICAgICAibWF4IiA6IDEuMAogICAgfSwKICAg
+        ICJEdXJhYmlsaXR5X01heCIgOiB7CiAgICAgICJtaW4iIDogNTAwLjAsCiAg
+        ICAgICJtYXgiIDogMTAwMC4wCiAgICB9CiAgfSwKICAicmFuZG9tQWZmaXhl
+        cyIgOiBbIF0sCiAgImdlbXMiIDogWyBdLAogICJzb2NrZXRFZmZlY3RzIiA6
+        IFsgXSwKICAiY3JhZnRlZEJ5IiA6IFsgXSwKICAic2Vhc29uUmVxdWlyZWRU
+        b0Ryb3AiIDogLTEsCiAgImlzU2Vhc29uUmVxdWlyZWRUb0Ryb3AiIDogZmFs
+        c2UsCiAgImRlc2NyaXB0aW9uIiA6IG51bGwsCiAgImJsb2NrQ2hhbmNlIiA6
+        ICIrMC4wJSBDaGFuY2UgdG8gQmxvY2siCn0=
+    http_version: 
+  recorded_at: Sun, 28 Jun 2015 10:15:10 GMT
+recorded_with: VCR 2.9.3

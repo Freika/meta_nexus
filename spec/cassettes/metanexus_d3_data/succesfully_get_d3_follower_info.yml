@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/d3/data/follower/templar?apikey=API_KEY&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 28 Jun 2015 10:15:11 GMT
+      Last-Modified:
+      - Thu, 21 May 2015 21:35:10 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1e-85.mashery.com
+      X-Plan-Qps-Allotted:
+      - '100'
+      X-Plan-Qps-Current:
+      - '1'
+      X-Plan-Quota-Allotted:
+      - '36000'
+      X-Plan-Quota-Current:
+      - '12'
+      X-Plan-Quota-Reset:
+      - Sunday, June 28, 2015 11:00:00 AM GMT
+      Content-Length:
+      - '851'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "slug" : "templar",
+          "name" : "Templar",
+          "realName" : "d3.follower.templar.realName",
+          "portrait" : "templar",
+          "skills" : {
+            "active" : [ {
+              "slug" : "heal",
+              "name" : "Heal",
+              "icon" : "templar_heal_110",
+              "level" : 5,
+              "tooltipUrl" : "skill/templar/heal",
+              "description" : "Cooldown: 30 seconds\r\n\r\nHeals you and the Templar for 193112 Life.",
+              "simpleDescription" : "Cooldown: 30 seconds\r\n\r\nHeals you and the Templar.",
+              "skillCalcId" : "a"
+            }, {
+              "slug" : "intervene",
+              "name" : "Intervene",
+              "icon" : "templar_intervene",
+              "level" : 5,
+              "tooltipUrl" : "skill/templar/intervene",
+              "description" : "Cooldown: 10 seconds\r\n\r\nTaunt enemies within 10 yards of you for 3 seconds when you are hit.",
+              "simpleDescription" : "Cooldown: 10 seconds\r\n\r\nTaunt enemies near you when you are hit.",
+              "skillCalcId" : "Z"
+            }, {
+              "slug" : "loyalty",
+              "name" : "Loyalty",
+              "icon" : "templar_loyalty",
+              "level" : 10,
+              "tooltipUrl" : "skill/templar/loyalty",
+              "description" : "Regenerates 6437 Life per second for you and the Templar.",
+              "simpleDescription" : "Provides Life regeneration for you and the Templar.",
+              "skillCalcId" : "b"
+            }, {
+              "slug" : "intimidate",
+              "name" : "Intimidate",
+              "icon" : "templar_intimidate",
+              "level" : 10,
+              "tooltipUrl" : "skill/templar/intimidate",
+              "description" : "Enemies that hit or are hit by the Templar are slowed by 80% for 3 seconds.",
+              "simpleDescription" : "Enemies that hit or are hit by the Templar are slowed.",
+              "skillCalcId" : "Y"
+            }, {
+              "slug" : "charge",
+              "name" : "Charge",
+              "icon" : "templar_shieldcharge",
+              "level" : 15,
+              "tooltipUrl" : "skill/templar/charge",
+              "description" : "Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon damage and stunning all enemies within 8 yards for 3 seconds.",
+              "simpleDescription" : "Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing damage and stunning nearby enemies.",
+              "skillCalcId" : "c"
+            }, {
+              "slug" : "onslaught",
+              "name" : "Onslaught",
+              "icon" : "templar_onslaught",
+              "level" : 15,
+              "tooltipUrl" : "skill/templar/onslaught",
+              "description" : "Cooldown: 10 seconds\r\n\r\nDelivers a massive blow to an enemy for 800% weapon damage.",
+              "simpleDescription" : "Cooldown: 10 seconds\r\n\r\nDelivers a massive blow to an enemy.",
+              "skillCalcId" : "X"
+            }, {
+              "slug" : "inspire",
+              "name" : "Inspire",
+              "icon" : "templar_inspire",
+              "level" : 20,
+              "tooltipUrl" : "skill/templar/inspire",
+              "description" : "Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred: 1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury: 10% generated.\r\nSpirit: 10% generated.",
+              "simpleDescription" : "Increases your resource generation.",
+              "skillCalcId" : "d"
+            }, {
+              "slug" : "guardian",
+              "name" : "Guardian",
+              "icon" : "templar_guardian",
+              "level" : 20,
+              "tooltipUrl" : "skill/templar/guardian",
+              "description" : "Cooldown: 30 seconds\r\n\r\nRush to your aid, knocking back enemies within 15 yards and healing you for 182383 Life.",
+              "simpleDescription" : "Cooldown: 30 seconds\r\n\r\nWhen your Life is low, the Templar will come to your aid, knocking back nearby enemies and healing you.",
+              "skillCalcId" : "W"
+            } ],
+            "passive" : [ ]
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 28 Jun 2015 10:15:11 GMT
+recorded_with: VCR 2.9.3
