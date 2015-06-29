@@ -2,6 +2,7 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   attr_accessor :achievements, :appearance, :feed, :guild, :hunter_pets, :items,
                 :mounts, :pets, :pet_slots, :progression, :pvp, :quests, :reputation,
                 :stats, :talents, :titles, :audit
+
   FIELDS = %i(achievements appearance feed guild hunter_pets items mounts pets pet_slots progression pvp quests reputation stats talents titles audit).freeze
 
   # Find Character in Battle.net WoW Api
@@ -30,7 +31,7 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   # audit: true         - character audit info
   #
   # Example:
-  #   character = MetaNexus::Wow::Character.new('eu', 'en_US', 'api_key')
+  #   character = MetaNexus::Wow::Character
   #   character.find('shadowsong', 'Redstone')
   # Response in Hash:
   #   {"lastModified"=>1435160620000, "name"=>"Redstone", "realm"=>"Shadowsong", "battlegroup"=>"Reckoning / Abrechnung", "class"=>8, "race"=>2, "gender"=>1, "level"=>90, "achievementPoints"=>8390, "thumbnail"=>"internal-record-3666/105/93238889-avatar.jpg", "calcClass"=>"e", "totalHonorableKills"=>4519}
@@ -42,15 +43,11 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   #
 
   def self.find(args)
-    client = MetaNexus::Wow.new
     call_url = "#{client.url}/character/#{args[:realm]}/#{args[:name]}?"
 
-    fields = 'fields=' if args
+    fields = FIELDS.map { |field| args[field] ? field : next }.join(',')
 
-    fields += FIELDS.map { |field| args[field] ? field : next }.join(',')
-
-    call_url += fields if fields
-    call_url += '&' if args && fields
+    call_url << '&fields=' + fields if fields
     call_url += "locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
 
     MetaNexus::Api.call_api(call_url)
