@@ -4,6 +4,6 @@ class MetaNexus::Wow < MetaNexus::Api
   end
 
   def client
-    MetaNexus::Wow.new(@region, @api_key)
+    MetaNexus::Wow.new
   end
 end
