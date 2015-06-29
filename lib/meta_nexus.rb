@@ -1,5 +1,5 @@
 require 'httparty'
-# require 'vcr'
+require 'vcr'
 require 'meta_nexus/version'
 require 'meta_nexus/api'
 require 'meta_nexus/wow'
