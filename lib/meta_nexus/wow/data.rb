@@ -3,7 +3,7 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   # Find data info in Battle.net WoW Api
   #
   # Example:
-  #   data = MetaNexus::Wow::Data.new('eu', 'en_US', 'api_key')
+  #   data = MetaNexus::Wow::Data
   #   data.battlegroups
   #   data.character_races
   #   data.character_classes

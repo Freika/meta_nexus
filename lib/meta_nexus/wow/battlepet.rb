@@ -8,7 +8,7 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
   # id      - ability id
   #
   # Example:
-  #   battlepet = MetaNexus::Wow::BattlePet.new('eu', 'en_US', 'api_key')
+  #   battlepet = MetaNexus::Wow::BattlePet
   #   battlepet.ability(640)
   # Response in Hash:
   #   {"id"=>640, "name"=>"Toxic Smoke", "icon"=>"spell_shadow_plaguecloud", "cooldown"=>0, "rounds"=>1, "petTypeId"=>9, "isPassive"=>false, "hideHints"=>false}
@@ -20,7 +20,7 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
   # id      - species id
   #
   # Example:
-  #   battlepet = MetaNexus::Wow::BattlePet.new('eu', 'en_US', 'api_key')
+  #   battlepet = MetaNexus::Wow::BattlePet
   #   battlepet.species(258)
   # Response in Hash:
   #   {"speciesId"=>258, "petTypeId"=>9, "creatureId"=>42078, "name"=>"Mini Thor", ... }
@@ -38,7 +38,7 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
   # level - Level
   #
   # Example:
-  #   battlepet = MetaNexus::Wow::BattlePet.new('eu', 'en_US', 'api_key')
+  #   battlepet = MetaNexus::Wow::BattlePet
   #   battlepet.stats(258)
   # Response in Hash:
   #   {"speciesId"=>258, "breedId"=>3, "petQualityId"=>1, "level"=>25, "health"=>1338, "power"=>261, "speed"=>193}

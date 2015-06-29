@@ -5,7 +5,7 @@ class MetaNexus::Wow::Quest < MetaNexus::Wow
   # id      - quest id
   #
   # Example:
-  #   quest = MetaNexus::Wow::Quest.new('eu', 'en_US', 'api_key')
+  #   quest = MetaNexus::Wow::Quest
   #   quest.find('2v2')
   # Response in Hash:
   #   {"id"=>13146, "title"=>"Generosity Abounds", "reqLevel"=>77, "suggestedPartyMembers"=>0, "category"=>"Icecrown", "level"=>80}

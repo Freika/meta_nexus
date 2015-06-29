@@ -5,7 +5,7 @@ class MetaNexus::Wow::Pvp < MetaNexus::Wow
   # bracket      - bracket. Valid entries are: '2v2', '3v3', '5v5' and 'rbg'
   #
   # Example:
-  #   bracket = MetaNexus::Wow::Pvp.new('eu', 'en_US', 'api_key')
+  #   bracket = MetaNexus::Wow::Pvp
   #   bracket.leaderboard('2v2')
   # Response in Hash:
   #   Huge hash with leaderboard.

@@ -5,7 +5,7 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
   # id      - item id
   #
   # Example:
-  #   item = MetaNexus::Wow::Item.new('eu', 'en_US', 'api_key')
+  #   item = MetaNexus::Wow::Item
   #   item.find(18803)
   # Response in Hash:
   #   {"id"=>18803, "disenchantingSkillRank"=>225, "description"=>"Property of Finkle Einhorn, ...
@@ -14,7 +14,7 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
   # Required arguments:
   # set_id  - set id
   # Example:
-  #   item = MetaNexus::Wow::Item.new('eu', 'en_US', 'api_key')
+  #   item = MetaNexus::Wow::Item
   #   item.set(1060)
   # Response in Hash:
   #   {"id"=>1060, "name"=>"Deep Earth Vestments", "setBonuses"=>[{"description"=>"Reduces the mana cost of ...
