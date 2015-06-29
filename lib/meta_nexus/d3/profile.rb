@@ -23,11 +23,11 @@ class MetaNexus::D3::Profile < MetaNexus::D3
 
   def profile(battle_tag)
     call_url = "#{client.url}/profile/#{battle_tag}/?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def hero(battle_tag, hero_id)
     call_url = "#{client.url}/profile/#{battle_tag}/hero/#{hero_id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

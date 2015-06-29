@@ -33,17 +33,17 @@ class MetaNexus::Sc2::Profile < MetaNexus::Sc2
 
   def profile(id, region, name)
     call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def ladders(id, region, name)
     call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/ladders?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def match_history(id, region, name)
     call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/matches?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
 end

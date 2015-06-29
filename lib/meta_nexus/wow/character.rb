@@ -2,6 +2,7 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   attr_accessor :achievements, :appearance, :feed, :guild, :hunter_pets, :items,
                 :mounts, :pets, :pet_slots, :progression, :pvp, :quests, :reputation,
                 :stats, :talents, :titles, :audit
+  FIELDS = %i(achievements appearance feed guild hunter_pets items mounts pets pet_slots progression pvp quests reputation stats talents titles audit).freeze
 
   # Find Character in Battle.net WoW Api
   # Required arguments:
@@ -44,24 +45,9 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
     client = MetaNexus::Wow.new
     call_url = "#{client.url}/character/#{args[:realm]}/#{args[:name]}?"
 
-    fields =  'fields='        if args
-    fields += 'achievements,'  if args[:achievements]
-    fields += 'appearance,'    if args[:appearance]
-    fields += 'feed,'          if args[:feed]
-    fields += 'guild,'         if args[:guild]
-    fields += 'hunter_pets,'   if args[:hunter_pets]
-    fields += 'items,'         if args[:items]
-    fields += 'mounts,'        if args[:mounts]
-    fields += 'pets,'          if args[:pets]
-    fields += 'pet_slots,'     if args[:pet_slots]
-    fields += 'progression,'   if args[:progression]
-    fields += 'pvp,'           if args[:pvp]
-    fields += 'quests,'        if args[:quests]
-    fields += 'reputation,'    if args[:reputation]
-    fields += 'stats,'         if args[:stats]
-    fields += 'talents,'       if args[:talents]
-    fields += 'titles,'        if args[:titles]
-    fields += 'audit'          if args[:audit]
+    fields = 'fields=' if args
+
+    fields += FIELDS.map { |field| args[field] ? field : next }.join(',')
 
     call_url += fields if fields
     call_url += '&' if args && fields

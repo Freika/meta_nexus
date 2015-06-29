@@ -12,6 +12,6 @@ class MetaNexus::Sc2::Ladder < MetaNexus::Sc2
 
   def ladder(id)
     call_url = "#{client.url}/ladder/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

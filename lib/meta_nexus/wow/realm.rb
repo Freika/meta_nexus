@@ -27,6 +27,6 @@ class MetaNexus::Wow::Realm < MetaNexus::Wow
 
   def status
     call_url = "#{client.url}/realm/status?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

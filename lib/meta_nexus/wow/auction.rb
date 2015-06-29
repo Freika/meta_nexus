@@ -12,7 +12,8 @@ class MetaNexus::Wow::Auction < MetaNexus::Wow
   #
 
   def find(realm)
+    client = MetaNexus::Wow.new
     call_url = "#{client.url}/auction/data/#{realm}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

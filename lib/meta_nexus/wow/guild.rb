@@ -38,7 +38,7 @@ class MetaNexus::Wow::Guild < MetaNexus::Wow
     call_url += '&' if args
 
     call_url += "locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
 end

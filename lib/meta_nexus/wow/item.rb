@@ -22,11 +22,11 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
 
   def find(id)
     call_url = "#{client.url}/item/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def set(id)
     call_url = "#{client.url}/item/set/#{id}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

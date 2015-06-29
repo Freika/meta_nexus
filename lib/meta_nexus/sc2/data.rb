@@ -15,11 +15,11 @@ class MetaNexus::Sc2::Data < MetaNexus::Sc2
 
   def achievements
     call_url = "#{client.url}/data/achievements?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def rewards
     call_url = "#{client.url}/data/rewards?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

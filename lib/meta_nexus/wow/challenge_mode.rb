@@ -21,11 +21,11 @@ class MetaNexus::Wow::ChallengeMode < MetaNexus::Wow
 
   def realm(realm)
     call_url = "#{client.url}/challenge/#{realm}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def region
     call_url = "#{client.url}/challenge/region?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

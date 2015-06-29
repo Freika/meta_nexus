@@ -13,6 +13,6 @@ class MetaNexus::Wow::Pvp < MetaNexus::Wow
 
   def leaderboard(bracket)
     call_url = "#{client.url}/leaderboard/#{bracket}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end

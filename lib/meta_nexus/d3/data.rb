@@ -32,16 +32,16 @@ class MetaNexus::D3::Data < MetaNexus::D3
 
   def item(name)
     call_url = "#{client.url}/data/item/#{name}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def follower(klass)
     call_url = "#{client.url}/data/follower/#{klass}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 
   def artisan(name)
     call_url = "#{client.url}/data/artisan/#{name}?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    MetaNexus::Api.call_api(call_url)
   end
 end
