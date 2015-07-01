@@ -3,7 +3,7 @@ class MetaNexus::Sc2 < MetaNexus::Api
     "#{super}/sc2"
   end
 
-  def client
-    MetaNexus::Sc2.new(MetaNexus.config.region, MetaNexus.config.api_key)
+  def self.client
+    new
   end
 end

@@ -1,21 +1,21 @@
 require 'spec_helper'
 
-
 describe MetaNexus::D3::Data do
-  let!(:d3) { MetaNexus::D3::Data }
-  let!(:data_item) { File.open(File.dirname(__FILE__) + '/../fixtures/d3/data_item.rb') }
 
   it 'succesfully get D3 item info', :vcr do
+    d3 = MetaNexus::D3::Data
     item = d3.item('hand-axe')
-    expect(item).to eq(data_item.read)
+    expect(item).to eq ({"id"=>"Axe_1H_001", "name"=>"Hand Axe", "icon"=>"axe_1h_001_demonhunter_male", "displayColor"=>"white", "tooltipParams"=>"item/hand-axe", "requiredLevel"=>1, "itemLevel"=>1, "stackSizeMax"=>0, "bonusAffixes"=>0, "bonusAffixesMax"=>0, "accountBound"=>false, "typeName"=>"Axe", "type"=>{"twoHanded"=>false, "id"=>"Axe"}, "damageRange"=>"(2–3)–(3–4) Damage", "dps"=>{"min"=>3.2499998807907104, "max"=>4.549999833106995}, "attacksPerSecond"=>{"min"=>1.2999999523162842, "max"=>1.2999999523162842}, "attacksPerSecondText"=>"1.30 Attacks per Second", "minDamage"=>{"min"=>2.0, "max"=>3.0}, "maxDamage"=>{"min"=>3.0, "max"=>4.0}, "slots"=>["left-hand", "follower-left-hand", "right-hand", "follower-right-hand"], "attributes"=>{"primary"=>[], "secondary"=>[], "passive"=>[]}, "attributesRaw"=>{"Damage_Weapon_Min#Physical"=>{"min"=>2.0, "max"=>3.0}, "Durability_Cur"=>{"min"=>500.0, "max"=>1000.0}, "Damage_Weapon_Delta#Physical"=>{"min"=>1.0, "max"=>1.0}, "Durability_Max"=>{"min"=>500.0, "max"=>1000.0}, "Attacks_Per_Second_Item"=>{"min"=>1.2999999523162842, "max"=>1.2999999523162842}}, "randomAffixes"=>[], "gems"=>[], "socketEffects"=>[], "craftedBy"=>[], "seasonRequiredToDrop"=>-1, "isSeasonRequiredToDrop"=>false, "description"=>nil, "blockChance"=>"+0.0% Chance to Block"})
   end
 
   it 'succesfully get D3 follower info', :vcr do
+    d3 = MetaNexus::D3::Data
     follower = d3.follower('templar')
-    expect(follower).to eq (File.read('../../fixtures/d3/data_follower.yml'))
+    expect(follower).to eq ({"slug"=>"templar", "name"=>"Templar", "realName"=>"d3.follower.templar.realName", "portrait"=>"templar", "skills"=>{"active"=>[{"slug"=>"heal", "name"=>"Heal", "icon"=>"templar_heal_110", "level"=>5, "tooltipUrl"=>"skill/templar/heal", "description"=>"Cooldown: 30 seconds\r\n\r\nHeals you and the Templar for 193112 Life.", "simpleDescription"=>"Cooldown: 30 seconds\r\n\r\nHeals you and the Templar.", "skillCalcId"=>"a"}, {"slug"=>"intervene", "name"=>"Intervene", "icon"=>"templar_intervene", "level"=>5, "tooltipUrl"=>"skill/templar/intervene", "description"=>"Cooldown: 10 seconds\r\n\r\nTaunt enemies within 10 yards of you for 3 seconds when you are hit.", "simpleDescription"=>"Cooldown: 10 seconds\r\n\r\nTaunt enemies near you when you are hit.", "skillCalcId"=>"Z"}, {"slug"=>"loyalty", "name"=>"Loyalty", "icon"=>"templar_loyalty", "level"=>10, "tooltipUrl"=>"skill/templar/loyalty", "description"=>"Regenerates 6437 Life per second for you and the Templar.", "simpleDescription"=>"Provides Life regeneration for you and the Templar.", "skillCalcId"=>"b"}, {"slug"=>"intimidate", "name"=>"Intimidate", "icon"=>"templar_intimidate", "level"=>10, "tooltipUrl"=>"skill/templar/intimidate", "description"=>"Enemies that hit or are hit by the Templar are slowed by 80% for 3 seconds.", "simpleDescription"=>"Enemies that hit or are hit by the Templar are slowed.", "skillCalcId"=>"Y"}, {"slug"=>"charge", "name"=>"Charge", "icon"=>"templar_shieldcharge", "level"=>15, "tooltipUrl"=>"skill/templar/charge", "description"=>"Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon damage and stunning all enemies within 8 yards for 3 seconds.", "simpleDescription"=>"Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing damage and stunning nearby enemies.", "skillCalcId"=>"c"}, {"slug"=>"onslaught", "name"=>"Onslaught", "icon"=>"templar_onslaught", "level"=>15, "tooltipUrl"=>"skill/templar/onslaught", "description"=>"Cooldown: 10 seconds\r\n\r\nDelivers a massive blow to an enemy for 800% weapon damage.", "simpleDescription"=>"Cooldown: 10 seconds\r\n\r\nDelivers a massive blow to an enemy.", "skillCalcId"=>"X"}, {"slug"=>"inspire", "name"=>"Inspire", "icon"=>"templar_inspire", "level"=>20, "tooltipUrl"=>"skill/templar/inspire", "description"=>"Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred: 1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury: 10% generated.\r\nSpirit: 10% generated.", "simpleDescription"=>"Increases your resource generation.", "skillCalcId"=>"d"}, {"slug"=>"guardian", "name"=>"Guardian", "icon"=>"templar_guardian", "level"=>20, "tooltipUrl"=>"skill/templar/guardian", "description"=>"Cooldown: 30 seconds\r\n\r\nRush to your aid, knocking back enemies within 15 yards and healing you for 182383 Life.", "simpleDescription"=>"Cooldown: 30 seconds\r\n\r\nWhen your Life is low, the Templar will come to your aid, knocking back nearby enemies and healing you.", "skillCalcId"=>"W"}], "passive"=>[]}})
   end
 
   skip 'succesfully get D3 artisan info', :vcr do
+    d3 = MetaNexus::D3::Data
     artisan = d3.artisan('blacksmith')
     # TODO: use fixture to test.
   end
