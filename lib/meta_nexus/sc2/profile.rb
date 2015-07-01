@@ -31,18 +31,18 @@ class MetaNexus::Sc2::Profile < MetaNexus::Sc2
   # {"matches"=>[{"map"=>"Исследовательский комплекс", "type"=>"THREES", "decision"=>"WIN", "speed"=>"FASTER", ...
   #
 
-  def profile(id, region, name)
-    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/?locale=#{@locale}&apikey=#{@api_key}"
+  def self.profile(id, region, name)
+    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def ladders(id, region, name)
-    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/ladders?locale=#{@locale}&apikey=#{@api_key}"
+  def self.ladders(id, region, name)
+    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/ladders?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def match_history(id, region, name)
-    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/matches?locale=#{@locale}&apikey=#{@api_key}"
+  def self.match_history(id, region, name)
+    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/matches?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 

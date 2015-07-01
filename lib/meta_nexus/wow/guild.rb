@@ -25,7 +25,7 @@ class MetaNexus::Wow::Guild < MetaNexus::Wow
   # This will return guild info along with his news info.
   #
 
-  def find(realm, guildname, **args)
+  def self.find(realm, guildname, **args)
     call_url = "#{client.url}/guild/#{realm}/#{guildname}?"
 
     fields = 'fields=' if args
@@ -37,7 +37,7 @@ class MetaNexus::Wow::Guild < MetaNexus::Wow
     call_url += fields if fields
     call_url += '&' if args
 
-    call_url += "locale=#{@locale}&apikey=#{@api_key}"
+    call_url += "locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 

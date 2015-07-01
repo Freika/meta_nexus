@@ -12,7 +12,7 @@ class MetaNexus::Wow::Achievement < MetaNexus::Wow
   #
 
   def self.find(id)
-    call_url = "#{client.url}/achievement/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+    call_url = "#{client.url}/achievement/#{id}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

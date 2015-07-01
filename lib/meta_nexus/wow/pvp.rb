@@ -11,8 +11,8 @@ class MetaNexus::Wow::Pvp < MetaNexus::Wow
   #   Huge hash with leaderboard.
   #
 
-  def leaderboard(bracket)
-    call_url = "#{client.url}/leaderboard/#{bracket}?locale=#{@locale}&apikey=#{@api_key}"
+  def self.leaderboard(bracket)
+    call_url = "#{client.url}/leaderboard/#{bracket}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

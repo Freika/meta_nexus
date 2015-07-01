@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eu.api.battle.net/d3/profile/Scorch-2826/hero/9034002?apikey=API_KEY&locale=en_US
+    uri: https://eu.api.battle.net/d3/profile/Scorch-2826/hero/9034002?apikey=API_KEY&locale=en_GB
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Fri, 26 Jun 2015 20:15:44 GMT
+      - Wed, 01 Jul 2015 18:14:02 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-79.mashery.com
+      - prod-j-worker-us-east-1b-80.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,9 +39,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '15'
+      - '3'
       X-Plan-Quota-Reset:
-      - Friday, June 26, 2015 9:00:00 PM GMT
+      - Wednesday, July 1, 2015 7:00:00 PM GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -796,5 +796,5 @@ http_interactions:
         CiAgICAgIH0gXQogICAgfQogIH0sCiAgImRlYWQiIDogZmFsc2UsCiAgImxh
         c3QtdXBkYXRlZCIgOiAxNDMxMDM2ODY0Cn0=
     http_version: 
-  recorded_at: Fri, 26 Jun 2015 20:15:45 GMT
+  recorded_at: Wed, 01 Jul 2015 18:14:02 GMT
 recorded_with: VCR 2.9.3

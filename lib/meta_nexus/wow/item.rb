@@ -20,13 +20,13 @@ class MetaNexus::Wow::Item < MetaNexus::Wow
   #   {"id"=>1060, "name"=>"Deep Earth Vestments", "setBonuses"=>[{"description"=>"Reduces the mana cost of ...
   #
 
-  def find(id)
-    call_url = "#{client.url}/item/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+  def self.find(id)
+    call_url = "#{client.url}/item/#{id}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def set(id)
-    call_url = "#{client.url}/item/set/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+  def self.set(id)
+    call_url = "#{client.url}/item/set/#{id}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

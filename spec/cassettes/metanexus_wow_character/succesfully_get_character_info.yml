@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eu.api.battle.net/wow/character/shadowsong/Redstone?apikey=API_KEY&fields=,,,,,,,,,,,,,,,,&locale=en_GB
+    uri: https://eu.api.battle.net/wow/character/shadowsong/Redstone?apikey=API_KEY&fields=,,,,,,,,,,,,,,,,locale=en_GB
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Mon, 29 Jun 2015 20:26:47 GMT
+      - Mon, 29 Jun 2015 21:23:32 GMT
       Last-Modified:
       - Wed, 24 Jun 2015 15:43:40 GMT
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-75.mashery.com
+      - prod-j-worker-us-east-1d-84.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,9 +41,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '13'
+      - '8'
       X-Plan-Quota-Reset:
-      - Monday, June 29, 2015 9:00:00 PM GMT
+      - Monday, June 29, 2015 10:00:00 PM GMT
       Content-Length:
       - '228'
       Connection:
@@ -53,5 +53,5 @@ http_interactions:
       string: '{"lastModified":1435160620000,"name":"Redstone","realm":"Shadowsong","battlegroup":"Reckoning
         / Abrechnung","class":8,"race":2,"gender":1,"level":90,"achievementPoints":8405,"thumbnail":"internal-record-3666/105/93238889-avatar.jpg","calcClass":"e","totalHonorableKills":4519}'
     http_version: 
-  recorded_at: Mon, 29 Jun 2015 20:26:48 GMT
+  recorded_at: Mon, 29 Jun 2015 21:23:33 GMT
 recorded_with: VCR 2.9.3

@@ -46,18 +46,18 @@ class MetaNexus::Wow::BattlePet < MetaNexus::Wow
 
 
   [:ability, :species].each do |type|
-    define_method(type.to_sym) do |id|
-      call_url = "#{client.url}/battlePet/#{type.to_s}/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+    define_singleton_method(type.to_sym) do |id|
+      call_url = "#{client.url}/battlePet/#{type.to_s}/#{id}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
       MetaNexus::Api.call_api(call_url)
     end
   end
 
-  def stats(id, **args)
+  def self.stats(id, **args)
     call_url = "#{client.url}/battlePet/stats/#{id}?"
     call_url += "level=#{args[:level]}&" if args[:level]
     call_url += "breedId=#{args[:breed_id]}&" if args[:breed_id]
     call_url += "qualityId=#{args[:quality_id]}&" if args[:quality_id]
-    call_url += "locale=#{@locale}&apikey=#{@api_key}"
+    call_url += "locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

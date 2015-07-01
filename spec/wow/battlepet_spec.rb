@@ -3,7 +3,7 @@ require 'spec_helper'
 describe MetaNexus::Wow::BattlePet do
 
   let(:battlepet_client) {
-    battlepet_client = MetaNexus::Wow::BattlePet.new('eu', 'en_US', ENV['BNET_API_KEY'])
+    battlepet_client = MetaNexus::Wow::BattlePet
   }
 
   it 'succesfully get ability info', :vcr do

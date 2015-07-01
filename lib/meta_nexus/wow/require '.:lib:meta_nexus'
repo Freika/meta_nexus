@@ -1,6 +1,0 @@
-require './lib/meta_nexus'
-MetaNexus.config.api_key = 'rp36bx7ufdmddu6nz3dw5e9vqz9qppeu'
-MetaNexus.config.region = 'eu'
-MetaNexus.config.locale = 'en_GB'
-a = MetaNexus::Wow::Character
-a.find(realm: 'shadowsong', name: 'redstone')

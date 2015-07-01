@@ -19,13 +19,13 @@ class MetaNexus::Wow::ChallengeMode < MetaNexus::Wow
   #   {"challenge":[{"map":{"id":1182,"name":"Auchindoun","slug":"auchindoun","hasChallengeMode":true,"bronzeCriteria":{"time":3300000,"hours":0,"minutes":55,"seconds":0,"milliseconds":0,"isPositive":true},"silverCriteria": ...
   #
 
-  def realm(realm)
-    call_url = "#{client.url}/challenge/#{realm}?locale=#{@locale}&apikey=#{@api_key}"
+  def self.realm(realm)
+    call_url = "#{client.url}/challenge/#{realm}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def region
-    call_url = "#{client.url}/challenge/region?locale=#{@locale}&apikey=#{@api_key}"
+  def self.region
+    call_url = "#{client.url}/challenge/region?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

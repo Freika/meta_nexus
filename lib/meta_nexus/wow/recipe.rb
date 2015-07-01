@@ -11,8 +11,8 @@ class MetaNexus::Wow::Recipe < MetaNexus::Wow
   #   {"id"=>33994, "name"=>"Precise Strikes", "profession"=>"Enchanting", "icon"=>"spell_holy_greaterheal"}
   #
 
-  def find(id)
-    call_url = "#{client.url}/recipe/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+  def self.find(id)
+    call_url = "#{client.url}/recipe/#{id}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe MetaNexus::Wow::Guild do
-  let(:guild_client) { MetaNexus::Wow::Guild.new('eu', 'en_US', ENV['BNET_API_KEY']) }
+  let(:guild_client) { MetaNexus::Wow::Guild }
 
   it 'succesfully get guild info', :vcr do
     guild = guild_client.find('shadowsong', 'Goblins')

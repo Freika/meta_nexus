@@ -10,8 +10,8 @@ class MetaNexus::Sc2::Ladder < MetaNexus::Sc2
   # Response in Hash will contain huge data about top players on ladder.
   #
 
-  def ladder(id)
-    call_url = "#{client.url}/ladder/#{id}?locale=#{@locale}&apikey=#{@api_key}"
+  def self.ladder(id)
+    call_url = "#{client.url}/ladder/#{id}?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 end

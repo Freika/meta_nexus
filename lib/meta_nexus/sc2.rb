@@ -4,6 +4,6 @@ class MetaNexus::Sc2 < MetaNexus::Api
   end
 
   def client
-    MetaNexus::Sc2.new(@region, @api_key)
+    MetaNexus::Sc2.new(MetaNexus.config.region, MetaNexus.config.api_key)
   end
 end

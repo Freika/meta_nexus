@@ -18,53 +18,53 @@ class MetaNexus::Wow::Data < MetaNexus::Wow
   # Each method will return appropriate information in Hash format.
   #
 
-  def battlegroups
-    call_url = "#{client.url}/data/battlegroups/?locale=#{@locale}&apikey=#{@api_key}"
+  def self.battlegroups
+    call_url = "#{client.url}/data/battlegroups/?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def character_races
-    call_url = "#{client.url}/data/character/races?locale=#{@locale}&apikey=#{@api_key}"
+  def self.character_races
+    call_url = "#{client.url}/data/character/races?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def character_classes
-    call_url = "#{client.url}/data/character/classes?locale=#{@locale}&apikey=#{@api_key}"
+  def self.character_classes
+    call_url = "#{client.url}/data/character/classes?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def character_achievements
-    call_url = "#{client.url}/data/character/achievements?locale=#{@locale}&apikey=#{@api_key}"
+  def self.character_achievements
+    call_url = "#{client.url}/data/character/achievements?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def guild_achievements
-    call_url = "#{client.url}/data/guild/achievements?locale=#{@locale}&apikey=#{@api_key}"
+  def self.guild_achievements
+    call_url = "#{client.url}/data/guild/achievements?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def guild_rewards
-    call_url = "#{client.url}/data/guild/rewards?locale=#{@locale}&apikey=#{@api_key}"
+  def self.guild_rewards
+    call_url = "#{client.url}/data/guild/rewards?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def guild_perks
-    call_url = "#{client.url}/data/guild/perks?locale=#{@locale}&apikey=#{@api_key}"
+  def self.guild_perks
+    call_url = "#{client.url}/data/guild/perks?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def item_classes
-    call_url = "#{client.url}/data/item/classes?locale=#{@locale}&apikey=#{@api_key}"
+  def self.item_classes
+    call_url = "#{client.url}/data/item/classes?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def talents
-    call_url = "#{client.url}/data/talents?locale=#{@locale}&apikey=#{@api_key}"
+  def self.talents
+    call_url = "#{client.url}/data/talents?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
-  def pet_types
-    call_url = "#{client.url}/data/pet/types?locale=#{@locale}&apikey=#{@api_key}"
+  def self.pet_types
+    call_url = "#{client.url}/data/pet/types?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
     MetaNexus::Api.call_api(call_url)
   end
 
