@@ -33,6 +33,7 @@ MetaNexus.config do |c|
   c.region = 'us'
   c.locale = 'en_US'
   c.api_key = 'your_key'
+end
 ```
 
 Default value for region is `eu`, for locale - `en_GB`. Api key can be stored in environment variable `ENV['BNET_API_KEY']`.
