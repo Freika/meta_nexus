@@ -16,7 +16,7 @@ class MetaNexus::Sc2::Profile < MetaNexus::Sc2
   # Required arguments: same as for profile
   #
   # Example:
-  #   Sc2 = MetaNexus::Sc2::Profile.new('eu', 'en_US', 'api_key')
+  #   Sc2 = MetaNexus::Sc2::Profile
   #   sc2.ladders(10886, 2, 'out')
   # Resonse in Hash:
   # {"currentSeason"=>[], "previousSeason"=>[], "showcasePlacement"=>[]}
@@ -25,25 +25,25 @@ class MetaNexus::Sc2::Profile < MetaNexus::Sc2
   # Required arguments: same as for profile
   #
   # Example:
-  #   Sc2 = MetaNexus::Sc2::Profile.new('eu', 'en_US', 'api_key')
+  #   Sc2 = MetaNexus::Sc2::Profile
   #   sc2.match_history(10886, 2, 'out')
   # Resonse in Hash:
   # {"matches"=>[{"map"=>"Исследовательский комплекс", "type"=>"THREES", "decision"=>"WIN", "speed"=>"FASTER", ...
   #
 
-  def profile(id, region, name)
-    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+  def self.profile(id, region, name)
+    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
+    MetaNexus::Api.call_api(call_url)
   end
 
-  def ladders(id, region, name)
-    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/ladders?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+  def self.ladders(id, region, name)
+    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/ladders?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
+    MetaNexus::Api.call_api(call_url)
   end
 
-  def match_history(id, region, name)
-    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/matches?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+  def self.match_history(id, region, name)
+    call_url = "#{client.url}/profile/#{id}/#{region}/#{name}/matches?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
+    MetaNexus::Api.call_api(call_url)
   end
 
 end

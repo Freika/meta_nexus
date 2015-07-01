@@ -23,7 +23,10 @@ require 'meta_nexus/sc2'
 require 'meta_nexus/sc2/profile'
 require 'meta_nexus/sc2/ladder'
 require 'meta_nexus/sc2/data'
+require 'meta_nexus/config'
 
 module MetaNexus
-
+  def self.config
+    @config ||= MetaNexus::Config.new
+  end
 end

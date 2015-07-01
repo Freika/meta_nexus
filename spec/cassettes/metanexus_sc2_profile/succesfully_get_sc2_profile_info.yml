@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eu.api.battle.net/sc2/profile/10886/2/out/?apikey=API_KEY&locale=ru_RU
+    uri: https://eu.api.battle.net/sc2/profile/10886/2/out/?apikey=API_KEY&locale=en_GB
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Content-Language:
-      - ru-RU
+      - en-GB
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 28 Jun 2015 10:53:11 GMT
+      - Wed, 01 Jul 2015 18:30:59 GMT
       Server:
       - Apache
       Vary:
@@ -31,19 +31,19 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-76.mashery.com
+      - prod-j-worker-us-east-1b-59.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
-      - '2'
+      - '1'
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '44'
+      - '25'
       X-Plan-Quota-Reset:
-      - Sunday, June 28, 2015 11:00:00 AM GMT
-      Transfer-Encoding:
-      - chunked
+      - Wednesday, July 1, 2015 7:00:00 PM GMT
+      Content-Length:
+      - '3689'
       Connection:
       - keep-alive
     body:
@@ -97,8 +97,8 @@ http_interactions:
             "hots" : "HARD"
           },
           "season" : {
-            "seasonId" : 22,
-            "seasonNumber" : 2,
+            "seasonId" : 23,
+            "seasonNumber" : 3,
             "seasonYear" : 2015,
             "totalGamesThisSeason" : 0
           },
@@ -932,5 +932,5 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Sun, 28 Jun 2015 10:53:12 GMT
+  recorded_at: Wed, 01 Jul 2015 18:31:00 GMT
 recorded_with: VCR 2.9.3

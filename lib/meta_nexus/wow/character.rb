@@ -3,6 +3,8 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
                 :mounts, :pets, :pet_slots, :progression, :pvp, :quests, :reputation,
                 :stats, :talents, :titles, :audit
 
+  FIELDS = %i(achievements appearance feed guild hunter_pets items mounts pets pet_slots progression pvp quests reputation stats talents titles audit).freeze
+
   # Find Character in Battle.net WoW Api
   # Required arguments:
   # realm      - character realm
@@ -29,7 +31,7 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   # audit: true         - character audit info
   #
   # Example:
-  #   character = MetaNexus::Wow::Character.new('eu', 'en_US', 'api_key')
+  #   character = MetaNexus::Wow::Character
   #   character.find('shadowsong', 'Redstone')
   # Response in Hash:
   #   {"lastModified"=>1435160620000, "name"=>"Redstone", "realm"=>"Shadowsong", "battlegroup"=>"Reckoning / Abrechnung", "class"=>8, "race"=>2, "gender"=>1, "level"=>90, "achievementPoints"=>8390, "thumbnail"=>"internal-record-3666/105/93238889-avatar.jpg", "calcClass"=>"e", "totalHonorableKills"=>4519}
@@ -40,31 +42,14 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   # This will return character info along with his appearance info.
   #
 
-  def find(realm, name, **args)
-    call_url = "#{client.url}/character/#{realm}/#{name}?"
+  def self.find(args)
+    call_url = "#{client.url}/character/#{args[:realm]}/#{args[:name]}?"
 
-    fields = 'fields=' if args
-    fields += 'achievements,' if args[:achievements]
-    fields += 'appearance,' if args[:appearance]
-    fields += 'feed,' if args[:feed]
-    fields += 'guild,' if args[:guild]
-    fields += 'hunter_pets,' if args[:hunter_pets]
-    fields += 'items,' if args[:items]
-    fields += 'mounts,' if args[:mounts]
-    fields += 'pets,' if args[:pets]
-    fields += 'pet_slots,' if args[:pet_slots]
-    fields += 'progression,' if args[:progression]
-    fields += 'pvp,' if args[:pvp]
-    fields += 'quests,' if args[:quests]
-    fields += 'reputation,' if args[:reputation]
-    fields += 'stats,' if args[:stats]
-    fields += 'talents,' if args[:talents]
-    fields += 'titles,' if args[:titles]
-    fields += 'audit' if args[:audit]
+    fields = FIELDS.map { |field| args[field] ? field : next }.join(',')
 
-    call_url += fields if fields
-    call_url += '&' if args
-    call_url += "locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+    call_url << '&fields=' + fields if fields
+    call_url += "locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
+
+    MetaNexus::Api.call_api(call_url)
   end
 end

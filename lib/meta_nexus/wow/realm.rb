@@ -5,7 +5,7 @@ class MetaNexus::Wow::Realm < MetaNexus::Wow
   # realm      - Realm name
   #
   # Example:
-  #   realm = MetaNexus::Wow::Realm.new('eu', 'en_US', 'api_key')
+  #   realm = MetaNexus::Wow::Realm
   #   realm.find('shadowsong')
   # Response in Hash:
   #   {"realms": [{ "type": "pvp", "population": "high", "queue": false, "wintergrasp": { "area": 1, "controlling-faction": 0, "status": 0, "next":}, "tol-barad": { "area": 21, "controlling-faction": 0, "status": 1, "next":}, "status": true, "name": "Aegwynn", "slug": "aegwynn", "battlegroup": "Misery", "locale": "de_DE", "timezone": "Europe/Paris", "connected_realms": ["aegwynn", "internal-record" } ...
@@ -25,8 +25,8 @@ class MetaNexus::Wow::Realm < MetaNexus::Wow
   # 3: Concluded
   # next - A timestamp of when the next battle starts.
 
-  def status
-    call_url = "#{client.url}/realm/status?locale=#{@locale}&apikey=#{@api_key}"
-    call_api(call_url)
+  def self.status
+    call_url = "#{client.url}/realm/status?locale=#{MetaNexus.config.locale}&apikey=#{MetaNexus.config.api_key}"
+    MetaNexus::Api.call_api(call_url)
   end
 end

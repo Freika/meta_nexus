@@ -3,7 +3,7 @@ class MetaNexus::D3 < MetaNexus::Api
     "#{super}/d3"
   end
 
-  def client
-    MetaNexus::D3.new(@region, @api_key)
+  def self.client
+    new
   end
 end
