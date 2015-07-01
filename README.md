@@ -26,7 +26,16 @@ Or install it yourself as:
 
 ## Usage
 
-See [wiki](https://github.com/Freika/meta_nexus/wiki)
+Configure gem:
+
+```ruby
+MetaNexus.config do |c|
+  c.region = 'us'
+  c.locale = 'en_US'
+  c.api_key = 'your_key'
+```
+
+Default value for region is `eu`, for locale - `en_GB`. Api key can be stored in environment variable `ENV['BNET_API_KEY']`.
 
 ## Contributing
 
