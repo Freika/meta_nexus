@@ -32,7 +32,7 @@ class MetaNexus::Wow::Character < MetaNexus::Wow
   #
   # Example:
   #   character = MetaNexus::Wow::Character
-  #   character.find('shadowsong', 'Redstone')
+  #   character.find(realm: 'shadowsong', name: 'Redstone')
   # Response in Hash:
   #   {"lastModified"=>1435160620000, "name"=>"Redstone", "realm"=>"Shadowsong", "battlegroup"=>"Reckoning / Abrechnung", "class"=>8, "race"=>2, "gender"=>1, "level"=>90, "achievementPoints"=>8390, "thumbnail"=>"internal-record-3666/105/93238889-avatar.jpg", "calcClass"=>"e", "totalHonorableKills"=>4519}
   #
