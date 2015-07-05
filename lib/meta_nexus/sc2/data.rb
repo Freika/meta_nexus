@@ -6,7 +6,7 @@ class MetaNexus::Sc2::Data < MetaNexus::Sc2
   #   sc2.achievements
   # Response in Hash will contain huge data array with achievements
   #
-  # Find Sc2 Follower data in Battle.net Diablo 3 Api
+  # Find Sc2 Follower data in Battle.net StarCraft 2 Api
   # Example:
   #   sc2 = MetaNexus::Sc2::Data
   #   sc2.rewards

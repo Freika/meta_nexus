@@ -35,6 +35,8 @@
 
 ## Starcraft 2
 
+Refactor profile and ladder methods.
+
 ### Ladder
 
  - [x] Ladders

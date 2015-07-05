@@ -10,7 +10,6 @@ class MetaNexus::Wow::Guild < MetaNexus::Wow
   # achievements: true  - guild achievements info
   # news: true          - guild news info
   # challenge: true     - guild challenge info
-  # challenge: true     - guild challenge info
   # members: true       - guild members info
   #
   # Example:

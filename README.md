@@ -67,6 +67,39 @@ MetaNexus::Wow::Data.item_classes               # - get item classes
 MetaNexus::Wow::Data.talents                    # - get talents
 MetaNexus::Wow::Data.pet_types                  # - get pet types
 
+MetaNexus::Wow::Guild.find(realm, guild_name)   # - get guild. you can also get additional info passing fields. Example:
+#
+# MetaNexus::Wow::Guild.find('shadowsong', 'Goblins', achievements: true, members: true, challenge: true, news: true)
+#
+
+MetaNexus::Wow::Item.find(id)                   # - find item
+MetaNexus::Wow::Item.set(id)                    # - find item set
+MetaNexus::Wow::Pvp.leaderboard(bracket)        # - get leaderboard in specific bracket. brackets: '2v2', '3v3', '5v5' and 'rbg'
+MetaNexus::Wow::Quest.find(id)                  # - find quest
+MetaNexus::Wow::Realm.status                    # - get status of realms in current region
+MetaNexus::Wow::Recipe.find(id)                 # - find recipe
+MetaNexus::Wow::Spell.find(id)                  # - find spell
+```
+
+#### Diablo 3
+
+```ruby
+MetaNexus::D3::Data.item(name)                  # - find item
+MetaNexus::D3::Data.follower(class)             # - find follower
+MetaNexus::D3::Data.artisan(name)               # - find artisan
+MetaNexus::D3::Profile(battle_tag)              # - find profile
+MetaNexus::D3::Profile(battle_tag, hero_id)     # - find hero
+```
+
+#### StarCraft 2
+
+```ruby
+MetaNexus::Sc2::Data.achievements                  # - get achievements
+MetaNexus::Sc2::Data.rewards                       # - get rewards
+MetaNexus::Sc2::Ladder.ladder(id)                  # - get ladder
+MetaNexus::Sc2::Profile.profile(id, region, name)  # - get player profile
+MetaNexus::Sc2::Profile.ladders(id, region, name)  # - get player ladders
+MetaNexus::Sc2::Profile.match_history(id, region, name)  # - get player match history
 ```
 
 ## Contributing

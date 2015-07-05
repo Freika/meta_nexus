@@ -6,7 +6,7 @@ class MetaNexus::Wow::Recipe < MetaNexus::Wow
   #
   # Example:
   #   recipe = MetaNexus::Wow::Recipe
-  #   recipe.find('2v2')
+  #   recipe.find('33994')
   # Response in Hash:
   #   {"id"=>33994, "name"=>"Precise Strikes", "profession"=>"Enchanting", "icon"=>"spell_holy_greaterheal"}
   #
