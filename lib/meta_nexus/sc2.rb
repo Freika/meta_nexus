@@ -4,6 +4,6 @@ class MetaNexus::Sc2 < MetaNexus::Api
   end
 
   def self.client
-    new
+    @client ||= new
   end
 end

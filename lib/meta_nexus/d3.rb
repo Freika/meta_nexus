@@ -4,6 +4,6 @@ class MetaNexus::D3 < MetaNexus::Api
   end
 
   def self.client
-    new
+    @client ||= new
   end
 end
